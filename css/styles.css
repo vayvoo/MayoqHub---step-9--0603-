@@ -129,10 +129,10 @@ body{
     font-family: 'Times New Roman', Times, serif;
     font-style: 20px;
     line-height: 18px;
+    padding-top: 100px;
 }
 .main{
     width: 800px;
-    margin-top: 100px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -190,16 +190,20 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 20px;
 }
 .my-wallet{
     font-weight: 600;
 }
 .card{
-    margin-top: 20px;
+    
     background-color: #fff;
     padding: 10px;
     border-radius: 8px;
     border: 2px solid #fff;
+}
+.card:not(:last-child){
+    margin-bottom: 20px;
 }
 .card:hover{
     border: 2px solid blue;
@@ -229,6 +233,7 @@ body{
     justify-content: space-between;
     align-items: center;
     font-size: 20px;
+    margin-bottom: 50px;
 }
 .cost{
     display: flex;
@@ -245,8 +250,8 @@ body{
     margin-top: -4px;
 }
 hr{
-    margin-top: 50px;
     opacity: 0.7;
+    margin-bottom: 40px;
 }
 .right-container{
     padding: 25px;
@@ -255,7 +260,10 @@ hr{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 40px;
+    
+}
+.info:not(:last-child){
+    margin-bottom: 40px;
 }
 .maininfo{
     line-height: 20px;
@@ -289,3 +297,6 @@ hr{
     color: #8DCF63;
 }
 
+.add-wallet{
+    border: none;
+}
